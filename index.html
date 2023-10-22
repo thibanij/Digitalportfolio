@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <title> your name protofolio</title>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #694e4e;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+        }
+        .header-content h1{
+            font-size: 2.5rem;
+        }
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 75px;
+            left: 75px;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+        nav u1 {
+             list-style-type: none;
+             padding: 0;
+        }
+        nav u1 li{
+             display: inline;
+             margin: 0 20px;
+        }
+        nav u1 li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .download-button:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+        u1{ 
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        </style>
+        </head>
+        <body>
+            <header>
+                <div class=""header.content">
+                <img src="thiba.jpg" alt="your profilepicture" class="profile-picture">
+                <h1>Thibani J</h1>  
+                <p>student</p> 
+               </div>
+               </header>
+               <nav>
+                <u1>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skill</a></li>   
+                    <li><a href="#Education">Education</a></li> 
+                    <li><a href="#Contact">Contact</a></li>  
+                    <li><a href="#resume">Resume</a></li>
+                </u1>
+               </nav>
+               <section id="About">
+                <div class="section-content">
+                    <h2>About Me</h2>
+                <p>Hello everyone! I am a student of ST.HINDU COLLEGE</p>
+                </div>
+               </section>
+               <Section id="Skills">
+                <div class="section-content">
+                <h2>Skills</h2><u1>
+                    <li>c</li>
+                    <li>c++</li>
+                    <li>python</li>
+                </u1>
+                </div>
+               </Section>
+               <section id="Education">
+                <div class="section-content">
+                    <h2>Education</h2>
+                    <p>ST.HINDU COLLEGE - B.SC COMPUTER SCIENCE</p>
+                </div>
+               </section>
+               <section id="Contact">
+                <div class="section-content">
+                    <h2>Contact</h2>
+                    <u1>
+                        <li>Email id: thibanij@gmail.com</li>
+                        <li>phone no: 8754881410</li>
+                        <li>insta id: thibanisahaya</li>
+                    </u1>
+                </div>
+            </section>
+            <section id="resume">
+             <center>
+                <div class="section-content">
+                    <h2>Resume</h2>
+                    <a href="resume.jpeg" class="download-buttont">Download cv</a>
+                </div>
+            </center>
+            </section>
+            <footer>
+                <p>&copy; 2023 ThibaniJoseph</p>
+            </footer>
+            <script>
+                document.querySelectorAll('a[herf^="#"]').forEach(anchor=> {
+                    anchor.addEventlistener('click',function(e){
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href').substring(1);
+                        const targetElement = document.geElementById(targetId);
+                    })
+                })
+                </html>
+
+        
